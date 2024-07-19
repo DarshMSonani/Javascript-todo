@@ -74,6 +74,10 @@ input:focus {
     border: none;
     outline: 3px solid rgb(249, 0, 77);
     transition: 0.3s ease-in-out;
+    background-color: rgb(223, 240, 246);
+    box-shadow: 10px 10px lightgray;
+    transform: scaleY(1.1);
+    transition: 0.3s ease;
 }
 
 input:hover {

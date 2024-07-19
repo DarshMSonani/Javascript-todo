@@ -70,11 +70,16 @@ function updateIten(element, index) {
     const getName = textInput.value.trim();
 
     if (getName !== element.name) {
-        a.map(item => {
-            if (item.id === element.id) {
-                item.name = getName;
-            }
-        })
+        if (getName !== "") {
+            a.map(item => {
+                if (item.id === element.id) {
+                    item.name = getName;
+                }
+            })
+        }
+        else {
+            alert("Please enter a name")
+        }
     }
     else {
         alert("Please enter a new name");

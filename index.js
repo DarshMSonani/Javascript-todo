@@ -36,6 +36,7 @@ function readData() {
         li.textContent = number + ". " + " " + element.name;
 
         const editButton = document.createElement("button");
+        editButton.className = "editButton"
         editButton.textContent = "Edit";
         editButton.onclick = () => editItem(element, index)
 
@@ -54,8 +55,12 @@ function readData() {
 function editItem(element, index) {
     let getName = textInput.value = element.name
 
+    let editButton = document.querySelector(".editButton");
+
     submit1.style.display = "none"
     submit2.style.display = "flex"
+
+    editButton.style.display = "none"
 
     submit2.onclick = () => updateIten(element, index);
 }

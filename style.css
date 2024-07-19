@@ -113,6 +113,7 @@ li {
     align-items: center;
     justify-content: center;
     width: 400px;
+    word-spacing: 10px;
 }
 
 li:hover {

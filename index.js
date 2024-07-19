@@ -86,6 +86,9 @@ function updateIten(element, index) {
 }
 
 function deleteItem(id, index) {
+    textInput.value = ""
+    submit1.style.display = "inline"
+    submit2.style.display = "none"
     a.map(element => {
         if (element.id == id) {
             delete a[index]

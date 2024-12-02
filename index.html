@@ -1,33 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToDo By Darsh</title>
-
-    <!-- Link Css -->
+    <title>SDM - Full Stack Developer</title>
     <link rel="stylesheet" href="style.css">
-
-    <!-- Link FAv Icon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./Assets/favIcon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./Assets/favIcon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./Assets/favIcon/favicon-16x16.png">
-    <link rel="manifest" href="./Assets/favIcon/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h1>Todo LIst</h1>
+    <main>
+        <section id="home" class="hero">
+            <h1 class="animate-pop-in">Sonani Darsh</h1>
+            <h2 class="animate-pop-in full-stack">Full Stack Developer</h2>
+        </section>
 
-    <div class="container">
-        <input type="text" name="" id="name" placeholder="Name">
-        <button onclick="insertData()" class="submit2">Submit</button>
-        <button class="submit-1">Edit</button>
-    </div>
-    <ul id="data"></ul>
+        <section id="about" class="about">
+            <h2 class="animate-slide-in">About Me</h2>
+            <p class="animate-fade-in">I'm a passionate full-stack developer with expertise in creating robust and scalable web and mobile applications. With a strong foundation in both front-end and back-end technologies, I bring ideas to life through clean, efficient code.</p>
+        </section>
 
-    <script src="index.js"></script>
+        <section id="skills" class="skills">
+            <h2 class="animate-slide-in">My Skills</h2>
+            <div class="skill-grid">
+                <div class="skill-item animate-scale-in">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="skill-item animate-scale-in">
+                    <i class="fab fa-css3-alt"></i>
+                    <span>CSS3</span>
+                </div>
+                <div class="skill-item animate-scale-in">
+                    <i class="fab fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-item animate-scale-in">
+                    <i class="fab fa-react"></i>
+                    <span>React</span>
+                </div>
+                <div class="skill-item animate-scale-in">
+                    <i class="fab fa-react"></i>
+                    <span>React Native</span>
+                </div>
+                <div class="skill-item animate-scale-in">
+                    <i class="fab fa-node"></i>
+                    <span>Node.js</span>
+                </div>
+                <div class="skill-item animate-scale-in">
+                    <i class="fas fa-server"></i>
+                    <span>Next.js</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2 class="animate-slide-in">Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-item animate-fade-in">
+                    <h3>E-commerce Platform</h3>
+                    <p>A e-commerce solution built with Node.js, and MySql.</p>
+                </div>
+                <div class="project-item animate-fade-in">
+                    <h3>Salon Management System</h3>
+                    <p>A full-stack Management System that built with Html, CSS, Ejs, Node.js, and MySql.</p>
+                </div>
+                <div class="project-item animate-fade-in">
+                    <h3>Family Tree</h3>
+                    <p>A full-stack Family Tree solution built with React, Node.js, and MongoDB.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience">
+            <h2 class="animate-slide-in">Work Experience</h2>
+            <div class="experience-item animate-fade-in">
+                <h3>Node.js Developer</h3>
+                <p>Unikwork. | 2022 - 2023</p>
+                <ul>
+                    <li>Led development of multiple high-traffic web applications</li>
+                    <li>Learn About Node.js and How it Work</li>
+                    <li>Mentored junior developers and conducted code reviews</li>
+                </ul>
+            </div>
+            <div class="experience-item animate-fade-in">
+                <h3>Full Stack Developer</h3>
+                <p>RippleStacks | 2023 - Present</p>
+                <ul>
+                    <li>Developed and maintained client-facing web applications</li>
+                    <li>Collaborated with UX/UI designers to implement responsive designs</li>
+                    <li>Optimized database queries, improving application performance by 25%</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2 class="animate-slide-in">Get In Touch</h2>
+            <form class="animate-fade-in">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SDM. All rights reserved.</p>
+    </footer>
 </body>
-
 </html>
+
